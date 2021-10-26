@@ -1,33 +1,32 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
-const BUTTON_WIDTH = Dimensions.get('window').height * 0.3
+const MARGIN = Dimensions.get('window').width * 0.05
 
 const styles = StyleSheet.create({
-    container1: {
+    logoBox: {
         flex: 5,
-        backgroundColor: '#fff',
+        backgroundColor: '#e9c46a',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-end',
+    },
+    loginBox: {
+        flex: 8,
+        backgroundColor: '#e9c46a',
         alignItems: 'center',
         justifyContent: 'center',
     },
-    container2: {
-        flex: 2,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    container3: {
+    etcBox: {
         flex: 4,
-        backgroundColor: '#fff',
+        backgroundColor: '#e9c46a',
         alignItems: 'center',
         justifyContent: 'center',
     },
     input: {
         width: '70%'
     },
-    button: {
-        width: BUTTON_WIDTH,
-        backgroundColor: '#e76f51',
-        borderRadius: 100
+    textBox: {
+        marginLeft: MARGIN,
+        marginBottom: MARGIN
     }
 });
 
