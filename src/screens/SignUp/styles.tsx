@@ -10,13 +10,13 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
     },
     signUpBox: {
-        flex: 10.5,
+        flex: 12,
         backgroundColor: '#e9c46a',
         alignItems: 'center',
         justifyContent: 'center',
     },
     etcBox: {
-        flex: 3,
+        flex: 1,
         backgroundColor: '#e9c46a',
         alignItems: 'center',
         justifyContent: 'center',

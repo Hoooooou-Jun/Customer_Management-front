@@ -8,7 +8,7 @@ const TextInput = (props: any) => {
 		<View style={styles.textInputBox}>
 			<RNE.Text style={styles.text}>{props.title}</RNE.Text>
 			<View style={{alignItems: 'center', width: '100%'}}>
-				<RNE.Input placeholder={props.placeholder} inputStyle={{fontSize: 15}} containerStyle={{width: "90%"}} secureTextEntry={props.secureTextEntry}/>
+				<RNE.Input onChangeText={props.onChangeText} placeholder={props.placeholder} inputStyle={{fontSize: 15}} containerStyle={{width: "90%"}} secureTextEntry={props.secureTextEntry} />
 			</View>
 		</View>
 	)

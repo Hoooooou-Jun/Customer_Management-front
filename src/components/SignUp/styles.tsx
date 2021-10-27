@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 
 const CARD_WIDTH = Dimensions.get('window').width * 0.9
-const CARD_HEIGHT = Dimensions.get('window').height * 0.5
+const CARD_HEIGHT = Dimensions.get('window').height * 0.55
 const BUTTON_WIDTH = Dimensions.get('window').height * 0.4
 
 const styles = StyleSheet.create({
