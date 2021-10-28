@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     },
 	button: {
         width: BUTTON_WIDTH,
-        backgroundColor: '#e76f51',
+        backgroundColor: '#566340',
         borderRadius: 100
     }
 });

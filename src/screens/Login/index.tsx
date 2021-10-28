@@ -9,8 +9,8 @@ const Login = (props: any) => {
         <Fragment>
             <View style={styles.logoBox}>
                 <View style={styles.textBox}>
-                    <RNE.Text h1 style={{color: '#264653'}}>고객관리 시스템</RNE.Text>
-                    <RNE.Text h4 style={{color: '#2a9d8f'}}>Customer Management System</RNE.Text>
+                    <RNE.Text h1 style={{color: '#718355'}}>고객관리 시스템</RNE.Text>
+                    <RNE.Text h4 style={{color: '#97a97c'}}>Customer Management System</RNE.Text>
                 </View>
             </View>
             <View style={styles.loginBox}>
