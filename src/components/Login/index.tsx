@@ -4,7 +4,7 @@ import * as RNE  from 'react-native-elements';
 import { requestLogin } from '../../utils/request';
 import styles from './styles';
 
-const LoginBox = () => {
+const LoginBox = (props: any) => {
 	const [ID, set_ID] = useState<string>("");
 	const [PW, set_PW] = useState<string>("");
 
@@ -14,6 +14,8 @@ const LoginBox = () => {
 				'고객관리 시스템',
 				'로그인에 성공하였습니다.',
 			)
+			// props.props.navigation.navigate("TabNavi")  ->  redux 상태에 따라 조건 분기로 랜더링 변경
+			console.log(props)
 		}).catch((error) => {
 			const msg = error.response.data.message
 			if (msg === "Unauthorized user") {
