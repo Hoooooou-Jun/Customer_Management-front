@@ -14,7 +14,7 @@ const SignUp = (props: any) => {
                 </View>
             </View>
             <View style={styles.signUpBox}>
-                <SignUpBox />
+                <SignUpBox props={props} />
             </View>
             <View style={styles.etcBox}>
             </View>

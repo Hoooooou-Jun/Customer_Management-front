@@ -1,18 +1,28 @@
 import { request } from './axios';
 
-const requestLogin = (ID: string, PW: string) => {
+const requestLogin = (id: string, password: string) => {
 	return request.post('/users/login', {
-		"id": ID,
-		"password": PW,
+		"id": id,
+		"password": password,
 })};
 
-const requestSignUp = (ID: string, PW: string) => {
+const requestSignUp = (id: string, password: string) => {
 	return request.post('/users/register', {
-		"id": ID,
-		"password": PW,
+		"id": id,
+		"password": password,
+})};
+
+const requestEditUserInfo = (id: string, password: string, username: string, phone: string, region: string) => {
+	return request.post('/users/userinfo', {
+		"id": id,
+		"password": password,
+		"username": username,
+		"phone": phone,
+		"region": region,
 })};
 
 export {
 	requestLogin,
 	requestSignUp,
+	requestEditUserInfo,
 };
