@@ -113,7 +113,7 @@ const SignUpBox = (props: any) => {
 	if ( next === false ) {
 		return (
 			<View style={styles.shadowBox}>
-				<TextInput title="ID" onChangeText={set_ID} placeholder="아이디를 입력해주세요." secureTextEntry={false}/>
+				<TextInput title="ID" onChangeText={set_ID} placeholder="아이디를 입력해주세요." secureTextEntry={false} />
 				<TextInput title="Password" onChangeText={set_PW} placeholder="영문, 숫자, 특수문자를 포함해주세요." secureTextEntry={true}/>
 				<TextInput title="Check Password" onChangeText={set_checkPW} placeholder="비밀번호를 다시 입력해주세요." secureTextEntry={true}/>
 				<RNE.Button title="비밀번호 확인" onPress={_checkPW} disabled={check} icon={{name: "check-circle", size: 20, color: "skyblue"}} type="clear" />
@@ -125,7 +125,7 @@ const SignUpBox = (props: any) => {
 		return (
 			<View style={styles.shadowBox}>
 				<TextInput title="이름" onChangeText={set_name} placeholder="성함을 입력해주세요." secureTextEntry={false}/>
-				<TextInput title="전화번호" onChangeText={set_phone} placeholder="전화번호를 입력해주세요." secureTextEntry={true}/>
+				<TextInput title="전화번호" onChangeText={set_phone} placeholder="전화번호를 입력해주세요." secureTextEntry={true} keyboardType="number-pad"/>
 				<TextInput title="거주지" onChangeText={set_region} placeholder="거주지를 입력해주세요" secureTextEntry={true}/>
 				<RNE.Button title="Sign Up" onPress={_requestEditUserInfo} buttonStyle={styles.button} />
         	</View>
