@@ -6,11 +6,12 @@ export const fetchUserLogin = (id: string, password: string) => async (dispatch:
 	requestLogin(id, password).then((response) => {
 		dispatch({
 			type: USERLOGIN_SUCCESS,
-			payload: response.data.user
+			payload: response.data
 		})
 	}).catch((error) => {
 		dispatch({
-			type: USERLOGIN_FAILURE
+			type: USERLOGIN_FAILURE,
+			payload: error.response.data
 		})
 	})
 }
