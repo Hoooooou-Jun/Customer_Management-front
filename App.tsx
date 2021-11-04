@@ -1,14 +1,16 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import { Provider } from 'react-redux';
+import store from './src/store';
 import SignNavi from './src/routes';
-
-// redux 상태 값에 따른 렌더처리 해야함.
 
 const App = () => {
 	return (
-		<NavigationContainer>
-			<SignNavi />
-		</NavigationContainer>
+		<Provider store={store}>
+			<NavigationContainer>
+				<SignNavi />
+			</NavigationContainer>
+		</Provider>
 	)
 };
 
