@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { View } from 'react-native';
 import * as RNE  from 'react-native-elements';
-import LoginBox from '../../components/Login/index';
+import LoginBox from '../../components/LoginBox/index';
 import styles from './styles';
 
 const Login = (props: any) => {

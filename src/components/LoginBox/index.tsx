@@ -2,15 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { View, Alert } from 'react-native';
 import * as RNE  from 'react-native-elements';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchUserLogin } from '../../actions/userAction';
-import { rootReducerTpe } from '../../store'
+import { fetchUserLogin } from '../../redux/userLogin/action';
+import { rootReducerType } from '../../redux/types';
 import styles from './styles';
 
 const LoginBox = (props: any) => {
 	const [ID, set_ID] = useState<string>("");
 	const [PW, set_PW] = useState<string>("");
-	const msg = useSelector((state: rootReducerTpe) => state.userReducer.message)
+
+	const msg = useSelector((state: rootReducerType) => state.userLoginReducer.message)
 	const dispatch = useDispatch()
+	
 	useEffect(() => {
 		if (msg === 'Authorize Success') {
 			Alert.alert(
