@@ -11,8 +11,9 @@ const LoginBox = (props: any) => {
 	const [PW, set_PW] = useState<string>("");
 
 	const msg = useSelector((state: rootReducerType) => state.userLoginReducer.message)
+	const count = useSelector((state: rootReducerType) => state.userLoginReducer.count)
 	const dispatch = useDispatch()
-	
+	console.log(msg)
 	useEffect(() => {
 		if (msg === 'Authorize Success') {
 			Alert.alert(
@@ -41,7 +42,7 @@ const LoginBox = (props: any) => {
 		else {
 			console.log(msg)
 		}
-	}, [msg])
+	}, [msg, count]) // count를 넣은 것도 맘에 안드는데 msg까지 넣어서 더 맘에 안듬;
 
 	const _handleLogin = async () => {
 		dispatch(fetchUserLogin(ID, PW))

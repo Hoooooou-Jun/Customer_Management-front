@@ -18,5 +18,6 @@ export interface userLoginFailureDispatch {
 	type: typeof USERLOGIN_FAILURE
 	payload: {
 		message: string
+		count: number
 	}
 };

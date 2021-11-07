@@ -19,7 +19,9 @@ const userLoginReducer = (state = initialState, action: any) => {
 		}
 		case USERLOGIN_FAILURE: {
 			return {
-				message: action.payload.message 
+				...state,
+				message: action.payload.message,
+				count: ++state.count
 			}
 		}
 		default:
