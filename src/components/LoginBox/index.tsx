@@ -13,7 +13,6 @@ const LoginBox = (props: any) => {
 	const msg = useSelector((state: rootReducerType) => state.userLoginReducer.message)
 	const count = useSelector((state: rootReducerType) => state.userLoginReducer.count)
 	const dispatch = useDispatch()
-	console.log(msg)
 	useEffect(() => {
 		if (msg === 'Authorize Success') {
 			Alert.alert(

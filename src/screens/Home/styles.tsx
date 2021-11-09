@@ -1,11 +1,14 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+    headerText: {
+        fontSize: 17,
+        fontWeight: 'bold',
+        color: 'white'
+    },
     container: {
-        flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        //borderRadius: 10,
+        backgroundColor: '#718355',
     },
 });
 
