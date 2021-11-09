@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         color: 'white'
     },
     container: {
-        //borderRadius: 10,
+        // borderRadius: 10,
         backgroundColor: '#718355',
     },
 });

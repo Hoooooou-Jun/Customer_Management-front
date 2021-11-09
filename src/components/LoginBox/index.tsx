@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Alert } from 'react-native';
 import * as RNE  from 'react-native-elements';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchUserLogin } from '../../redux/userLogin/action';
 import { rootReducerType } from '../../redux/types';

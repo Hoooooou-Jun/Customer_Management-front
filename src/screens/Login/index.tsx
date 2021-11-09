@@ -11,16 +11,16 @@ const Login = (props: any) => {
             <View style={styles.logoBox}>
                 <StatusBar style="auto" />
                 <View style={styles.textBox}>
-                    <RNE.Text h1 style={{color: '#718355'}}>고객관리 시스템</RNE.Text>
-                    <RNE.Text h4 style={{color: '#97a97c'}}>Customer Management System</RNE.Text>
+                    <RNE.Text h1 style={{color: 'white'}}>고객관리 시스템</RNE.Text>
+                    <RNE.Text h4 style={{color: '#e9f5db'}}>Customer Management System</RNE.Text>
                 </View>
             </View>
             <View style={styles.loginBox}>
                 <LoginBox props={props}/>
             </View>
             <View style={styles.etcBox}>
-                <RNE.Button title="Sign Up" type="clear" onPress={() => props.navigation.navigate("SignUp")}/>
-                <RNE.Button title="Forget to password..." type="clear" />
+                <RNE.Button title="Sign Up" type="clear" onPress={() => props.navigation.navigate("SignUp")} titleStyle={{color: 'white'}} />
+                <RNE.Button title="Forget to password..." type="clear" titleStyle={{color: 'white'}} />
             </View>
         </Fragment>
     );
