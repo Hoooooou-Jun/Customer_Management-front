@@ -7,17 +7,10 @@ import styles from './styles';
 
 const Home = (props: any) => {
     return (
-        <Fragment>
-            <RNE.Header
-                leftComponent={<HeaderButton props={props} />}
-                centerComponent={<Text style={styles.headerText}>고객관리 시스템</Text>}
-                centerContainerStyle={{justifyContent: 'center'}}
-                containerStyle={styles.container}
-            />
-            <View style={{backgroundColor: 'white'}}>
-                <StatusBar style="auto" />
-            </View>
-        </Fragment>
+        <View style={{flex: 1, backgroundColor: 'white'}}>
+            <Text>asdfsd</Text>
+            <StatusBar style="auto" />
+        </View>
     );
 };
 

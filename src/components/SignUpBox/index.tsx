@@ -11,13 +11,13 @@ const SignUpBox = (props: any) => {
 	const [ID, set_ID] = useState<string>("");
 	const [PW, set_PW] = useState<string>("");
 	const [checkPW, set_checkPW] = useState<string>("");
-	const [check, set_check] = useState(false);
+	const [check, set_check] = useState<boolean>(false);
 
 	const [username, set_name] = useState<string>("");
 	const [phone, set_phone] = useState<string>("");
 	const [region, set_region] = useState<string>("");
 
-	const [next, set_next] = useState(false);
+	const [next, set_next] = useState<boolean>(false);
 
 	const msg = useSelector((state: rootReducerType) => state.userSignUpReducer.message)
 	const dispatch = useDispatch()
