@@ -12,7 +12,7 @@ const requestSignUp = (id: string, password: string) => {
 		"password": password,
 })};
 
-const requestEditUserInfo = (id: string, password: string, username: string, phone: string, region: string) => {
+const requestUserInfoEdit = (id: string, password: string, username: string, phone: string, region: string) => {
 	return request.post('/users/userinfo', {
 		"id": id,
 		"password": password,
@@ -24,5 +24,5 @@ const requestEditUserInfo = (id: string, password: string, username: string, pho
 export {
 	requestLogin,
 	requestSignUp,
-	requestEditUserInfo,
+	requestUserInfoEdit,
 };

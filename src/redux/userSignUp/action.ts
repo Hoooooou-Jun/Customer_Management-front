@@ -9,7 +9,6 @@ export const fetchUserSignUp = (id: string, password: string) => async (dispatch
 			payload: String(response.status)
 		});
 	}).catch((error) => {
-		console.log(error.response.data)
 		dispatch({
 			type: USERSIGNUP_FAILURE,
 			payload: error.response.data.message
