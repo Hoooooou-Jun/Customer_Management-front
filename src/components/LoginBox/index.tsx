@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { View, Alert } from 'react-native';
 import * as RNE  from 'react-native-elements';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchUserLogin } from '../../redux/userLogin/action';
+import { fetchUserLogin, fetchUserLoginReset } from '../../redux/userLogin/action';
 import { rootReducerType } from '../../redux/types';
 import styles from './styles';
 
@@ -12,8 +11,8 @@ const LoginBox = (props: any) => {
 	const [PW, set_PW] = useState<string>("");
 
 	const msg = useSelector((state: rootReducerType) => state.userLoginReducer.message)
-	const count = useSelector((state: rootReducerType) => state.userLoginReducer.count)
 	const dispatch = useDispatch()
+
 	useEffect(() => {
 		if (msg === 'Authorize Success') {
 			Alert.alert(
@@ -26,23 +25,26 @@ const LoginBox = (props: any) => {
 				'고객관리 시스템',
 				'가입되지 않은 계정입니다.',
 			)
+			dispatch(fetchUserLoginReset())
 		}
 		else if (msg === 'Incorrect password') {
 			Alert.alert(
 				'고객관리 시스템',
 				'비밀번호가 틀렸습니다.',
 			)
+			dispatch(fetchUserLoginReset())
 		}
 		else if (msg === 'Unauthorized token') {
 			Alert.alert(
 				'고객관리 시스템',
 				'토큰이 서명되지 않았습니다.',
 			)
+			dispatch(fetchUserLoginReset())
 		}
 		else {
 			console.log(msg)
 		}
-	}, [msg, count]) // count를 넣은 것도 맘에 안드는데 msg까지 넣어서 더 맘에 안듬;
+	}, [msg])
 
 	const _handleLogin = async () => {
 		dispatch(fetchUserLogin(ID, PW))

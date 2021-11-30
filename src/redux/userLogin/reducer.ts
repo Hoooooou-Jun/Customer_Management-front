@@ -1,5 +1,5 @@
 import { initialState } from './state';
-import { USERLOGIN_FAILURE, USERLOGIN_SUCCESS } from './type';
+import { USERLOGIN_FAILURE, USERLOGIN_RESET, USERLOGIN_SUCCESS } from './type';
 
 const userLoginReducer = (state = initialState, action: any) => {
 	switch (action.type) {
@@ -21,7 +21,12 @@ const userLoginReducer = (state = initialState, action: any) => {
 			return {
 				...state,
 				message: action.payload.message,
-				count: ++state.count
+			}
+		}
+		case USERLOGIN_RESET: {
+			return {
+				...state,
+				message: '',
 			}
 		}
 		default:
