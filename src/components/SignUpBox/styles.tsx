@@ -12,13 +12,14 @@ const styles = StyleSheet.create({
 		width: CARD_WIDTH,
 		height: CARD_HEIGHT,
 		elevation: 20,
+		borderRadius: 25,
 	},
 	input: {
         width: "90%"
     },
 	button: {
         width: BUTTON_WIDTH,
-        backgroundColor: '#566340',
+        backgroundColor: '#0197f6',
         borderRadius: 100
     }
 });

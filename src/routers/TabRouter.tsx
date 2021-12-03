@@ -38,7 +38,7 @@ const TabRouter = () => {
             }}
             activeColor="white"
             inactiveColor="lightgrey"
-            barStyle={{ backgroundColor: '#566340' }}
+            barStyle={{ backgroundColor: '#0197f6' }}
         >
             <Tab.Screen 
                 name="회원 현황" 

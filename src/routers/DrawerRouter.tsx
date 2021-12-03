@@ -16,7 +16,7 @@ const DrawerRouter = () => {
                 options={{
                     title: '고객관리 시스템',
                     headerStyle: {
-                        backgroundColor: '#718355',
+                        backgroundColor: '#0197f6',
                     },
                     headerTitleAlign: 'center',
                     headerTintColor: '#fff',
@@ -30,7 +30,15 @@ const DrawerRouter = () => {
                 name="myInfo"
                 component={MyInfo}
                 options={{
-                    title: '내 정보'
+                    title: '내 정보',
+                    headerStyle: {
+                        backgroundColor: '#0197f6',
+                    },
+                    headerTintColor: '#fff',
+                    headerTitleStyle: {
+                        fontWeight: 'bold',
+                    },
+                    headerLeft: () => <HeaderButton />
                 }}
             />
         </Drawer.Navigator>

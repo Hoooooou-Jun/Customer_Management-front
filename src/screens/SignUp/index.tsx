@@ -9,8 +9,8 @@ const SignUp = (props: any) => {
         <Fragment>
             <View style={styles.logoBox}>
                 <View style={styles.textBox}>
-                    <RNE.Text h1 style={{color: 'white'}}>회원가입</RNE.Text>
-                    <RNE.Text h4 style={{color: '#e9f5db'}}>Please enter the infomation</RNE.Text>
+                    <RNE.Text h1 style={{color: '#0197f6'}}>회원가입</RNE.Text>
+                    <RNE.Text h5 style={{color: '#8ED3FE', fontWeight: 'bold'}}>Please enter the infomation</RNE.Text>
                 </View>
             </View>
             <View style={styles.signUpBox}>

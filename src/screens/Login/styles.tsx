@@ -5,19 +5,19 @@ const MARGIN = Dimensions.get('window').width * 0.05
 const styles = StyleSheet.create({
     logoBox: {
         flex: 5,
-        backgroundColor: '#718355',
-        alignItems: 'flex-start',
+        backgroundColor: '#f8f9fa',
+        alignItems: 'center',
         justifyContent: 'flex-end',
     },
     loginBox: {
         flex: 8,
-        backgroundColor: '#718355',
+        backgroundColor: '#f8f9fa',
         alignItems: 'center',
         justifyContent: 'center',
     },
     etcBox: {
         flex: 4,
-        backgroundColor: '#718355',
+        backgroundColor: '#f8f9fa',
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         width: '70%'
     },
     textBox: {
-        marginLeft: MARGIN,
+        alignItems: 'center',
         marginBottom: MARGIN
     }
 });
