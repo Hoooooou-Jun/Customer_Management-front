@@ -26,8 +26,8 @@ const ListScreen = () => {
 }
 
 const TabRouter = () => {
-	return (
-        <Tab.Navigator 
+    return (
+        <Tab.Navigator
             initialRouteName="Home"
             labeled={false}
             screenOptions={{
@@ -40,8 +40,8 @@ const TabRouter = () => {
             inactiveColor="lightgrey"
             barStyle={{ backgroundColor: '#0197f6' }}
         >
-            <Tab.Screen 
-                name="회원 현황" 
+            <Tab.Screen
+                name="회원 현황"
                 component={HomeScreen}
                 options={{
                     tabBarIcon: () => (
@@ -49,8 +49,8 @@ const TabRouter = () => {
                     ),
                 }}
             />
-            <Tab.Screen 
-                name="회원 목록" 
+            <Tab.Screen
+                name="회원 목록"
                 component={ListScreen}
                 options={{
                     tabBarIcon: () => (
@@ -59,7 +59,7 @@ const TabRouter = () => {
                 }}
             />
         </Tab.Navigator>
-	)
+    )
 }
 
 export default TabRouter;

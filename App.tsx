@@ -6,15 +6,15 @@ import store from './src/redux/store';
 import Routes from './src/routes';
 
 const App = () => {
-	return (
-		<Provider store={store}>
-			<NavigationContainer>
-				<SafeAreaProvider>
-					<Routes />
-				</SafeAreaProvider>
-			</NavigationContainer>
-		</Provider>
-	)
+    return (
+        <Provider store={store}>
+            <NavigationContainer>
+                <SafeAreaProvider>
+                    <Routes />
+                </SafeAreaProvider>
+            </NavigationContainer>
+        </Provider>
+    )
 };
 
 export default App;

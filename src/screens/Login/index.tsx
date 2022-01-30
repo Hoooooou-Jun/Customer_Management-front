@@ -17,7 +17,7 @@ const Login = (props: any) => {
                 <LoginBox props={props}/>
             </View>
             <View style={styles.etcBox}>
-                <RNE.Button title="Sign Up" type="clear" onPress={() => props.navigation.navigate("SignUp")} titleStyle={{color: 'grey'}} />
+                <RNE.Button title="Sign Up" type="clear" onPress={() => props.navigation.navigate('SignUp')} titleStyle={{color: 'grey'}} />
                 <RNE.Button title="Forget to password..." type="clear" titleStyle={{color: 'grey'}} />
             </View>
         </Fragment>

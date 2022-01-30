@@ -8,6 +8,6 @@ export interface IinitailState {
 }
 
 export const initialState: IinitailState = {
-	message: '',
-	count: 0
+    message: '',
+    count: 0
 }

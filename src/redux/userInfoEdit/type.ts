@@ -6,9 +6,9 @@ export type userInfoEditDispatchType = userInfoEditSuccessDispatch | userInfoEdi
 export interface userInfoEditSuccessDispatch {
 	type: typeof USERINFOEDIT_SUCCESS
 	payload: string
-};
+}
 
 export interface userInfoEditFailureDispatch {
 	type: typeof USERINFOEDIT_FAILURE
 	payload: string
-};
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import TabRouter from './TabRouter';
 import MyInfo from '../screens/myInfo';
 import HeaderButton from '../components/HeaderButton';
@@ -8,7 +8,7 @@ const Drawer = createDrawerNavigator();
 
 const DrawerRouter = () => {
     return (
-        <Drawer.Navigator 
+        <Drawer.Navigator
             screenOptions={{headerShown: true}}>
             <Drawer.Screen
                 name='Home'
@@ -23,7 +23,7 @@ const DrawerRouter = () => {
                     headerTitleStyle: {
                         fontWeight: 'bold',
                     },
-				    headerLeft: () => <HeaderButton />
+                    headerLeft: () => <HeaderButton />
 			    }}
             />
             <Drawer.Screen

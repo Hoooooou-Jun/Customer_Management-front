@@ -3,5 +3,5 @@ export interface IinitailState {
 }
 
 export const initialState: IinitailState = {
-	message: ''
+    message: ''
 }

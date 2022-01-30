@@ -4,9 +4,9 @@ import userSignUpReducer from './userSignUp/reducer';
 import userInfoEditReducer from './userInfoEdit/reducer';
 
 const rootReducer = combineReducers({
-	userLoginReducer,
-	userSignUpReducer,
-	userInfoEditReducer,
+    userLoginReducer,
+    userSignUpReducer,
+    userInfoEditReducer,
 });
 
 export default rootReducer;

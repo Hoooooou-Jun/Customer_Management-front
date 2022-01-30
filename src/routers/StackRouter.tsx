@@ -16,11 +16,11 @@ const MainScreen = () => {
 }
 
 const StackRouter = () => {
-	return (
+    return (
         <Stack.Navigator screenOptions={{headerShown: false}}>
             <Stack.Screen name="Home" component={MainScreen} />
         </Stack.Navigator>
-	)
+    )
 }
 
 export default StackRouter
