@@ -17,7 +17,6 @@ export const fetchUserLogin = (id: string, password: string) => async (dispatch:
 };
 
 export const fetchUserLoginReset = () => (dispatch: Dispatch) => {
-    console.log('asdf')
     dispatch({
         type: USERLOGIN_RESET,
     })
